@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --port 3850",
     "build": "next build",
-    "start": "next start --port 3850"
+    "start": "next start --port 3850",
+    "rebuild-db": "tsx scripts/rebuild-db-from-cache.ts"
   },
   "keywords": [],
   "author": "",

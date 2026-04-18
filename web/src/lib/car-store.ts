@@ -5,6 +5,7 @@ import type { CarListing, BrandStats } from "./encar-api";
 import { MANUFACTURER_LABELS } from "./encar-api";
 
 const DB_FILE = join(process.cwd(), "data", "db", "cars.json");
+const CACHE_FILE = join(process.cwd(), "data", "cache", "cars.json");
 
 export type CarStatus = "active" | "booked";
 
@@ -38,6 +39,33 @@ function loadDB(): Database {
 
   try {
     if (!existsSync(DB_FILE)) {
+      if (existsSync(CACHE_FILE)) {
+        const cache = JSON.parse(readFileSync(CACHE_FILE, "utf-8")) as {
+          timestamp?: number;
+          total?: number;
+          cars?: CarListing[];
+        };
+
+        const cars = (cache.cars ?? []).map((parsed) => ({
+          ...parsed,
+          status: "active" as CarStatus,
+        }));
+
+        const fallback: Database = {
+          lastSync: cache.timestamp ? new Date(cache.timestamp).toISOString() : "",
+          totalOnEncar: Number(cache.total ?? cars.length ?? 0),
+          syncDurationSec: 0,
+          cars: cars.map((car) => ({
+            id: car.id,
+            status: car.status,
+            parsed: car,
+          })),
+        };
+
+        _cache = { db: fallback, loadedAt: Date.now() };
+        return fallback;
+      }
+
       return { lastSync: "", totalOnEncar: 0, syncDurationSec: 0, cars: [] };
     }
     const db = JSON.parse(readFileSync(DB_FILE, "utf-8")) as Database;

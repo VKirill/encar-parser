@@ -9,6 +9,7 @@ node_modules/
 web/node_modules/
 web/.next/
 web/out/
+web/data/db/*.json
 
 # Env and local configs
 .env
