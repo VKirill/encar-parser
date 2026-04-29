@@ -1,0 +1,11 @@
+{
+  "scannedAt": "2026-04-29T17:25:32.741Z",
+  "threshold": 0.5,
+  "stats": {
+    "pagesScanned": 10,
+    "paragraphsScanned": 214,
+    "clustersFound": 0,
+    "totalDuplicates": 0
+  },
+  "clusters": []
+}

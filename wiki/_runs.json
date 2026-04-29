@@ -1,0 +1,50 @@
+{
+  "overview.md": {
+    "model": "GPT-5.5",
+    "fallback": false,
+    "date": "2026-04-29",
+    "size": 15782
+  },
+  "decisions.md": {
+    "model": "GPT-5.5",
+    "fallback": false,
+    "date": "2026-04-29",
+    "size": 28183
+  },
+  "architecture.md": {
+    "model": "GPT-5.5",
+    "fallback": false,
+    "date": "2026-04-29",
+    "size": 21292
+  },
+  "gotchas.md": {
+    "model": "GPT-5.5",
+    "fallback": false,
+    "date": "2026-04-29",
+    "size": 18007
+  },
+  "deployment.md": {
+    "model": "GPT-5.5",
+    "fallback": false,
+    "date": "2026-04-29",
+    "size": 13993
+  },
+  "active-areas.md": {
+    "model": "GPT-5.5",
+    "fallback": false,
+    "date": "2026-04-29",
+    "size": 11705
+  },
+  "active-tasks.md": {
+    "model": "GPT-5.5",
+    "fallback": false,
+    "date": "2026-04-29",
+    "size": 454
+  },
+  "gaps.md": {
+    "model": "GPT-5.5",
+    "fallback": false,
+    "date": "2026-04-29",
+    "size": 13714
+  }
+}
