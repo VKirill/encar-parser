@@ -158,3 +158,4 @@ Use the file that owns the behavior you want to change:
 - [architecture](./architecture.md)
 - [decisions](./decisions.md)
 - [deployment](./deployment.md)
+- [gotchas](./gotchas.md)

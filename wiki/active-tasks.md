@@ -71,3 +71,9 @@ Use this shape for each status section:
 - [active areas](active-areas.md) — where current churn appears in commits and operational logs.
 - [gaps](gaps.md) — candidate documentation work that is not necessarily active.
 - [gotchas](gotchas.md) — risks and failure modes that may become future tasks.
+
+## Backlinks
+
+- [active-areas](./active-areas.md)
+- [gaps](./gaps.md)
+- [gotchas](./gotchas.md)

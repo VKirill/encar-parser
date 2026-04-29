@@ -122,3 +122,6 @@ The lead endpoint writes to `data/leads.jsonl` under the runtime working directo
 ## Backlinks
 
 - [active-tasks](./active-tasks.md)
+- [architecture](./architecture.md)
+- [deployment](./deployment.md)
+- [gotchas](./gotchas.md)

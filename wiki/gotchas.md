@@ -224,6 +224,7 @@ renameSync(tmpFile, DB_FILE);
 - [active-areas](./active-areas.md)
 - [active-tasks](./active-tasks.md)
 - [architecture](./architecture.md)
+- [decisions](./decisions.md)
 - [deployment](./deployment.md)
 - [gaps](./gaps.md)
 - [overview](./overview.md)

@@ -121,3 +121,6 @@ These sections are useful but should grow when the relevant code is next touched
 ## Backlinks
 
 - [active-tasks](./active-tasks.md)
+- [architecture](./architecture.md)
+- [deployment](./deployment.md)
+- [gotchas](./gotchas.md)
