@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -lc 'test -f wiki/index.md && head -60 wiki/index.md || true; test -f wiki/log.md && tail -15 wiki/log.md || true; exit 0'",
+            "tag": "wiki-sessionstart-injected"
+          }
+        ]
+      }
+    ]
+  }
+}
